@@ -125,6 +125,15 @@ const baseConfig = {
 				use: 'ts-loader',
 				exclude: /node_modules/,
 			},
+			{
+				test: /\.wasm$/,
+				type: "javascript/auto",
+				loader: "file-loader",
+				options: {
+				  publicPath: "dist/"
+				}
+			}
+
 		],
 	},
 };

@@ -3,8 +3,7 @@ import { hello } from '../../hello-wasm/pkg'
 
 joplin.plugins.register({
 	onStart: async function() {
-		const h = hello()
-		console.log({ h })
+		console.log(hello())
 		console.info('Hello world. Test plugin started!');
 	},
 });
